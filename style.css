@@ -1,0 +1,124 @@
+/* ================= Reset ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ================= Loader ================= */
+#start-screen {
+    background-color: #000;
+    color: #00FF41;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.2rem;
+}
+
+/* ================= Body ================= */
+body {
+    font-family: 'Press Start 2P', cursive;
+    background: #111;
+    color: #00FF41;
+    transition: all 0.5s ease;
+    line-height: 1.6;
+}
+
+/* ================= Header ================= */
+header {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px dashed #0ff;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #FFEB3B;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+nav a:hover {
+    color: #0ff;
+}
+
+/* ================= Main ================= */
+main {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+section {
+    background: #333;
+    padding: 20px;
+    border: 2px dashed #0ff;
+    border-radius: 10px;
+}
+
+/* ================= Footer ================= */
+footer {
+    background: #222;
+    padding: 15px;
+    text-align: center;
+    border-top: 3px dashed #0ff;
+    margin-top: 30px;
+}
+
+button {
+    background: #0ff;
+    color: #111;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #FFEB3B;
+    color: #111;
+}
+
+/* ================= Theme Switcher ================= */
+body.clean {
+    background: #f5f5f5;
+    color: #333;
+}
+
+body.clean header, body.clean footer {
+    background: #fff;
+    border: 2px solid #ccc;
+}
+
+body.clean section {
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+/* ================= Glitch Text ================= */
+.glitch {
+    position: relative;
+    font-size: 2.5rem;
+    color: #0ff;
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    0% { text-shadow: 2px 2px red, -2px -2px blue; }
+    25% { text-shadow: -2px -2px red, 2px 2px blue; }
+    50% { text-shadow: 2px -2px red, -2px 2px blue; }
+    75% { text-shadow: -2px 2px red, 2px -2px blue; }
+    100% { text-shadow: 2px 2px red, -2px -2px blue; }
+}
